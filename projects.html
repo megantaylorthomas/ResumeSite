@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Projects</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="title">Career Resume</a>
+        <nav>
+            <ul>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="education.html">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <section id="main" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+                <h1 class="major">Projects</h1>
+                <div class="row">
+                    <div class="col-6 col-12-medium">
+                        <span class="image fit"><img src="images/seedlings.jpg" alt="" /></span>
+                    </div>
+                    <div class="col-6 col-12-medium">
+                        <h2>Megan's Web Conservatory</h2>
+                        <h3>Personal Project</h3>
+                        <p>When I am not on the clock you can often find me with plants in hand. For a long time, I have
+                            wanted
+                            to combine my passion for plants with my love for technology. My web conservatory was my
+                            first foot
+                            in the door. This project serves several purposes. As my house plant collection has grown I
+                            have
+                            been looking for a way to showcase, catalog, and manage my houseplants. After hours of
+                            research into
+                            botany in conjunction with my personal experience, I have created a profile for each of my
+                            house
+                            plants. Every profile contains key care information such as watering, light, and humidity.
+                            The
+                            profiles also share interesting information on toxicity, expected growth, and the plant's
+                            origins.
+                            While the website acts as an online catalog it also doubles as a plant identification
+                            system. Each
+                            of my house plants has an identification tag containing a QR code. When friends or family
+                            have
+                            questions about a house plant or possibly want one themself, they simply scan the tag, and
+                            the plant
+                            profile is presented.</p>
+                    </div>
+                </div>
+
+                The technical architecture behind the sites implements a CI/CD pipeline from my GitHub repo to the
+                S3 bucket. The current computer architecture behind the website is rather simple, as showcased in
+                the diagram to the right. The code behind the project is a blend of HTML, CSS, and JavaScript.
+                Although this website is currently static, behind the scenes it is getting a makeover. I have been
+                adding each plant profile to a DynamoDB instance. I also created a lambda function to query the DB
+                which can be called through an API gateway (Architecture Diagram Below). The last piece I am working on is rewriting the website
+                code to pull from the API on page load.
+
+                While the cloud architecture, website, and QR are nothing groundbreaking in terms of computing, what
+                I would like to focus on is the application of the technology. Having the option to pull up a plant
+                profile with a click of a button makes accessing information simple and easy. This is what I find as
+                the most important part of the project. Technology is only as powerful as how you choose to use it.
+                Using technology to help others learn is where my passions truly lie! </p>
+                <div class="row">
+                    <div class="col-6 col-12-medium">
+                        <label>Technologies Used:</label>
+                        <ul>
+                            <li>AWS DynamoDB</li>
+                            <li>AWS S3</li>
+                            <li>AWS Lambda </li>
+                            <li>AWS API Gateway </li>
+                            <li>HTML/CSS/JavaScript</li>
+                            <li>GitHub </li>
+                            <li>AWS Route 53</li>
+                            <li>AWS Code Pipeline </li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-12-medium">
+                        <br>
+                        <span class="image fit"><img src="images/arch.png" alt="" /></span>
+                        <ul class="actions fit">
+                            <li><a href="http://meganswebconservatory.com/" class="button fit">Visit the Web
+                                    Conservatory</a></li>
+                        </ul>
+                        <ul class="actions fit">
+                            <li><a href="https://i89gvd36ae.execute-api.us-east-1.amazonaws.com/items"
+                                    class="button fit">View raw Plant API Data</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col-6 col-12-medium">
+                        <h2>CarrerResume.org</h2>
+                        <h3>Personal Project</h3>
+                        <h3>November 2020 - Present</h3>
+                        <p>Every developer needs a way to easily showcase some of their professional abilities. This
+                            website accomplishes just that for me!
+                            When learning more about AWS services I found how extremely simple to host and support a
+                            website, so the cloud became the home of my online resume. The current computer architecture
+                            behind the website is rather simple, as showcased in the diagram to the left. The original
+                            code was from HTML5 UP!<a href="https://html5up.net/">HTML5 UP!</a> which provides amazing
+                            web templates that are free for both personal and commercial use. As I always say, there is
+                            no use reinventing the wheel! So I repurposed their code for my purposes and learned a lot
+                            about web development along the way. Using Route 53 for domain management and Code Pipeline
+                            for CI/CD deployments also makes for easy support of the site.
+                        </p>
+                    </div>
+                    <div class="col-6 col-12-medium">
+                        <span class="image fit"><img src="images/static_site.png" alt="" /></span>
+                    </div>
+                </div>
+                <hr />
+                <div>
+                    <h2>Raspberry Pi Projects</h2>
+                    <p>Some of the projects I have enjoyed the most have involved branching out from the normal software
+                        technology stack I use and working with my hands! An easy, and extremely affordable, way I do
+                        that is by building projects with Raspberry Pis. I will not claim the software in either of
+                        these projects is supremely innovative or unique. In fact, I did not write the majority of the
+                        code myself. Like any wise developer, I believe there is no point in reinventing the wheel. An
+                        important part of computing is learning how other developers' code works and optimizing it for
+                        your purposes. I found great joy in building these projects and I use them frequently. </p>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-12-medium">
+                        <span class="image fit"><img src="images/ticker.JPG" alt="" /></span>
+                    </div>
+                    <div class="col-6 col-12-medium">
+                        <h2>Crypto Currency Price Ticker</h2>
+                        <h3>Personal Project</h3>
+                        <p>The original code for this project was generously posted by user
+                            <a href="https://github.com/taoteh1221/Slideshow_Crypto_Ticker.git"> taoteh1221 on
+                                GitHub</a>. This
+                            This user also has great documentation on installation for those who are unfamiliar. I made
+                            modifications to make the application compatible with the 7-inch touchscreen Raspberry Pi
+                            Display. I also made changes to display the prices of cryptos currently in my portfolio or
+                            that I have my eye on. I used TinkerCad to design legs and a case for my display screen. To
+                            print my designs I used an Ultimaker 3D printer and PLA plastics. This price ticker now sits
+                            on my desk so I can easily monitor crypto prices.
+                        </p>
+                        <label>Technologies Used:</label>
+                        <ul>
+                            <li>Yahoo Finance API</li>
+                            <li><a href="https://www.raspberrypi.com/products/raspberry-pi-3-model-b/">Raspberry Pi
+                                    3
+                                    Model B</a></li>
+                            <li><a href="https://www.raspberrypi.com/products/raspberry-pi-touch-display/">7-Inch
+                                    Raspberry Pi Touchscreem</a></li>
+                            <li>Ultimaker (3D Printer)</li>
+                            <li><a href="https://www.tinkercad.com/">TinkerCAD</a></li>
+                            <li>Linux\Unix</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-12-medium">
+                        <h2>Magic Mirror with Custom Built Frame</h2>
+                        <h3>Personal Project</h3>
+                        <p>Personal Project
+                            Magic mirrors are one of the most popular computing projects out there. They are a great
+                            first step for many developers into the world of Raspberry Pis. The software I selected was
+                            posted by user <a href="https://github.com/MichMich/MagicMirror"> MichMich on GitHub</a>..
+                            This project earn ranks with my others primarily because of the carpentry and computer
+                            hardware experience I gained. At the start of this project, I was skeptical of my ability to
+                            learn about the hardware with no documentation. Those doubts vanished as soon as I began
+                            deconstructing the old LED TV from my childhood bedroom. I embedded the hardware for the TV
+                            directly into the mirror frame to take advantage of the existing components such as a button
+                            panel, input panel, and speaker system. This project currently lives in my powder room and
+                            is a great reminder that I am capable of more than I know, I just have to try!</p>
+                    </div>
+                    <div class="col-6 col-12-medium">
+                        <span class="image fit"><img src="images/pic4.JPG" alt="" /></span>
+                    </div>
+                </div>
+                <hr />
+                <div id="freshair" class="row">
+                    <div class="col-6 col-12-medium">
+                        <span class="image fit"><img src="images/captsone.jpg" alt="" /></span>
+                        <span class="image fit"><img src="images/captsone2.jpg" alt="" /></span>
+                    </div>
+                    <div class="col-6 col-12-medium">
+                        <h2>Fresh Air Grand Rapids</h2>
+                        <h3>Grand Valley State University Capstone Project</h3>
+                        <p>Awareness of the environment's effect on our health has grown exponentially over time. Air
+                            quality is one of the largest concerns. Even though air quality has a constant effect on our
+                            health, accurate neighborhood-specific data is not available to the public. Without this
+                            data, we can easily overlook an environmental factor that may disproportionately affect the
+                            health of minority communities. This issue led us to the development of our senior capstone
+                            project. The goal of our project was to create a community-focused, educational, web
+                            application designed to inform Grand Rapids residents of air quality metrics. We have
+                            several air quality sensors placed strategically around the city of Grand Rapids with the
+                            help of our sponsors. The sensors collect and store the data locally until a network
+                            connection, where it is then sent to an AWS DynamoDB. We cleaned, processed, and analyzed
+                            the data using an AWS Lambda. On the front end, the data is presented as a heat map that
+                            displays the pollution levels in each neighborhood of the city, as well as the sensor
+                            locations. An additional feature on the web app is a tab dedicated to community access to
+                            the air quality data we collect. This data is downloaded as a CSV with the click of a
+                            button. Our project also includes a community outreach program that sends emails and texts
+                            to registrants about relevant air quality conditions in their neighborhood or areas of
+                            concern in the city. The goal of our project is to provide this data in an easy-to-use
+                            manner that is accessible to all.</p>
+                        <label>Technologies Used:</label>
+                        <ul>
+                            <li>Amazon DynamoDB</li>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Amazon Lambda</li>
+                            <li>HTML/CSS/JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+        <div class="inner">
+            <ul class="menu">
+                <li>&copy; Untitled. All rights reserved.</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
