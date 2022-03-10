@@ -45,43 +45,33 @@
                     <div class="col-6 col-12-medium">
                         <h2>Megan's Web Conservatory</h2>
                         <h3>Personal Project</h3>
-                        <p>When I am not on the clock you can often find me with plants in hand. For a long time, I have
-                            wanted
-                            to combine my passion for plants with my love for technology. My web conservatory was my
-                            first foot
-                            in the door. This project serves several purposes. As my house plant collection has grown I
-                            have
-                            been looking for a way to showcase, catalog, and manage my houseplants. After hours of
-                            research into
-                            botany in conjunction with my personal experience, I have created a profile for each of my
-                            house
-                            plants. Every profile contains key care information such as watering, light, and humidity.
-                            The
-                            profiles also share interesting information on toxicity, expected growth, and the plant's
-                            origins.
-                            While the website acts as an online catalog it also doubles as a plant identification
-                            system. Each
-                            of my house plants has an identification tag containing a QR code. When friends or family
-                            have
+                        <p>Since my fascination for botany began I have wanted to combine that passion with my technical
+                            skills. My web conservatory was my first foot in the door. This project serves several
+                            purposes. As my house plant collection has grown I have found a need to showcase, catalog,
+                            and manage my houseplants. After hours of research into botany in conjunction with my
+                            personal experience, I have created a profile for each of my house plants. Every profile
+                            contains key care information such as watering, light, and humidity. The profiles also share
+                            interesting information on toxicity, expected growth, and the plant's origins. While the
+                            website acts as an online catalog it also doubles as a plant identification system. Each of
+                            my house plants has an identification tag containing a QR code. When friends or family have
                             questions about a house plant or possibly want one themself, they simply scan the tag, and
-                            the plant
-                            profile is presented.</p>
+                            the plant profile is presented.</p>
                     </div>
                 </div>
-
-                The technical architecture behind the sites implements a CI/CD pipeline from my GitHub repo to the
-                S3 bucket. The current computer architecture behind the website is rather simple, as showcased in
-                the diagram. The code behind the project is a blend of HTML, CSS, and JavaScript.
-                Although this website is currently static, behind the scenes it is getting a makeover. I have been
-                adding each plant profile to a DynamoDB instance. I also created a lambda function to query the DB
-                which can be called through an API gateway (Architecture Diagram Below). The last piece I am working on is rewriting the website
-                code to pull from the API on page load.
-
-                While the cloud architecture, website, and QR are nothing groundbreaking in terms of computing, what
-                I would like to focus on is the application of the technology. Having the option to pull up a plant
-                profile with a click of a button makes accessing information simple and easy. This is what I find as
-                the most important part of the project. Technology is only as powerful as how you choose to use it.
-                Using technology to help others learn is where my passions truly lie! </p>
+                <p>The technical architecture behind the sites implements a CI/CD pipeline from my GitHub repo to an S3
+                    bucket. The architecture behind the website is rather simple, as showcased in the diagram below. The
+                    simplistic architecture is by design as it allows for straightforward support and modifications.
+                    The code behind the project is a blend of HTML, CSS, and JavaScript. Although this website is
+                    currently static, behind the scenes it is getting a makeover. I am in the process of adding each
+                    plant profile to a DynamoDB instance. I have created a lambda function to query the DB which can be
+                    called through an API gateway. Once I have added all plant profiles to the DynamoDB instance I will
+                    rewrite the code to pull from the API on page load. While the cloud architecture, website, and QR
+                    are nothing groundbreaking in terms of computing, what I would like to focus on is the application
+                    of the technology. Having the option to pull up a plant profile with a click of a button makes
+                    accessing information simple and easy. This is what I find as the most important part of the
+                    project. Technology is only as powerful as how you choose to use it. Using technology to help others
+                    learn is where my passions truly lie!
+                </p>
                 <div class="row">
                     <div class="col-6 col-12-medium">
                         <label>Technologies Used:</label>
@@ -119,12 +109,13 @@
                         <p>Every developer needs a way to easily showcase some of their professional abilities. This
                             website accomplishes just that for me!
                             When learning more about AWS services I found how extremely simple to host and support a
-                            website, so the cloud became the home of my online resume. The current computer architecture
-                            behind the website is rather simple, as showcased in the diagram to the left. The original
-                            code was from <a href="https://html5up.net/">HTML5 UP!</a> which provides amazing
-                            web templates that are free for both personal and commercial use. So I repurposed their code for my purposes and learned a lot
+                            website, so the cloud became the home of my online resume. The current architecture
+                            behind the website is rather simple, as showcased in the diagram. The original
+                            code is from <a href="https://html5up.net/">HTML5 UP!</a> which provides amazing
+                            web templates that are free for both personal and commercial use. So I repurposed their code
+                            for my purposes and learned a lot
                             about web development along the way. Using Route 53 for domain management and Code Pipeline
-                            for CI/CD deployments also makes for easy support of the site.
+                            for CI/CD deployments creates straightforward support of the site.
                         </p>
                     </div>
                     <div class="col-6 col-12-medium">
@@ -151,13 +142,13 @@
                         <h3>Personal Project</h3>
                         <p>The original code for this project was generously posted by user
                             <a href="https://github.com/taoteh1221/Slideshow_Crypto_Ticker.git"> taoteh1221 on
-                                GitHub</a>. This
+                                GitHub</a>.
                             This user also has great documentation on installation for those who are unfamiliar. I made
                             modifications to make the application compatible with the 7-inch touchscreen Raspberry Pi
                             Display. I also made changes to display the prices of cryptos currently in my portfolio or
                             that I have my eye on. I used TinkerCad to design legs and a case for my display screen. To
                             print my designs I used an Ultimaker 3D printer and PLA plastics. This price ticker now sits
-                            on my desk so I can easily monitor crypto prices.
+                            on my desk so I can easily monitor crypto prices while workign.
                         </p>
                         <label>Technologies Used:</label>
                         <ul>
@@ -177,10 +168,9 @@
                     <div class="col-6 col-12-medium">
                         <h2>Magic Mirror with Custom Built Frame</h2>
                         <h3>Personal Project</h3>
-                        <p>Personal Project
-                            Magic mirrors are one of the most popular computing projects out there. They are a great
+                        <p>Magic mirrors are one of the most popular computing projects out there. They are a great
                             first step for many developers into the world of Raspberry Pis. The software I selected was
-                            posted by user <a href="https://github.com/MichMich/MagicMirror"> MichMich on GitHub</a>..
+                            posted by user <a href="https://github.com/MichMich/MagicMirror"> MichMich on GitHub</a>.
                             This project earn ranks with my others primarily because of the carpentry and computer
                             hardware experience I gained. At the start of this project, I was skeptical of my ability to
                             learn about the hardware with no documentation. Those doubts vanished as soon as I began
@@ -230,8 +220,77 @@
                         </ul>
                     </div>
                 </div>
+                <hr />
+                <div id="tensor" class="row">
+                    <div class="col-6 col-12-medium">
+                        <h2>Automated Car Identification System Using Tensorflow</h2>
+                        <h3>Grand Valley State University Project</h3>
+                        <p>The use case for our specific classifier is a Chevrolet service station. We could use our AI
+                            to identify the next car in line to be serviced and pull up vehicle data before the mechanic
+                            even gets to the car. Having knowledge of the next vehicle can help so that servicing
+                            machines can automatically adjust to focus on that vehicle. Examples include switching the
+                            types of oil being pumped through the valve, having an order list generate based off of the
+                            vehicle’s parts, having recall information show automatically, and general information
+                            regarding maintenance frequency. To bring this idea to fruition, it took searching for a
+                            data set, creating a data manipulation script, creating and training our model, and lastly
+                            building the UI. Tensorflow makes it extremely easy to create and train a neural network for
+                            image classification. Its ease of use stems from its incorporation of the Inception V3
+                            neural network into new projects. Inception V3 is a CNN that took about two weeks(on a
+                            computer with 8 GPUs) to train on 1.2 million images. With the time constraints of our
+                            project, using Inception V3 provides us with a more accurate base instantly. Also,
+                            Tensorflow allowed us to work with complex deep learning techniques on a higher level. After
+                            we grasped the concepts of Tensorflow with Inception V3, we were able to dive deeper into
+                            the lower level operations written in the code. Being that the interface was not the prime
+                            concern of our project, we used PyQt with Designer to spin up a working demo. We also made
+                            our GUI very modular so that our Tensorflow backend can be retrained and applied to
+                            different use cases. In the retrain tab on our GUI, you can select a different dataset to
+                            train on. After this model is trained, the new AI model will automatically work with our
+                            classification front end. As a result, we’ve made image classification a ‘point-and-click’
+                            operation, which opens the division of AI up to more people than ever.</p>
+
+                    </div>
+                    <div class="col-6 col-12-medium">
+                        <span class="image fit"><img src="images/tensor.jpg" alt="" /></span>
+                        <span class="image fit"><img src="images/details.jpg" alt="" /></span>
+                    </div>
+                </div>
+                <hr />
+                <div id="GVMon" class="row">
+                    <div class="col-6 col-12-medium">
+                        <span class="image fit"><img src="images/title.JPG" alt="" /></span>
+                        <span class="image fit"><img src="images/classroom.JPG" alt="" /></span>
+                    </div>
+                    <div class="col-6 col-12-medium">
+                        <h2>GV' Mon</h2>
+                        <h3>Grand Valley State University Project</h3>
+                        <p>For this project, we created a shameless Pokémon knockoff with GVSU flare. This 2D game
+                            follows your many adventures and battles at GVSU. The main goal of the game is the same
+                            as college, to graduate. Challenge other students and professors on campus to gain
+                            credits in order to complete your degree. Explore the campus while listening to the
+                            tranquil sounds from the original Pokemon games and see what you can find! The game
+                            opens up with an introduction from the sprite version of T. Haas (GVSU President)
+                            welcoming the player to campus. After your orientation from T. Haas, you can explore the
+                            landscape of our lovely campus, enter many of the buildings, and battle a variety of
+                            characters you encounter along the way. GV Mon is an open-world game, meaning the user
+                            can go anywhere at any time. As you explore the map, music will vary by location. Each
+                            battle you win ups your health and attack strength as well as rewarding you with
+                            credits. Once you acquire enough credits from winning your battles you can graduate!
+                        </p>
+                        <label>Technologies Used:</label>
+                        <ul>
+                            <li>Unity Game Engine</li>
+                            <li>C#</li>
+                            <li>StyleCop</li>
+                            <li>Visual Studios</li>
+                            <li>MonoBehavior and ReSharper</li>
+                            <li>GhostDocumentation</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </section>
+    </div>
+    </section>
 
     </div>
 
